@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 
@@ -6,7 +6,7 @@ namespace SimpleIteration_6._2._1
 {
     class Program
     {
-        static void PrintMatrix(List<List<double>> A, string title = "Матрица")
+        static void PrintMatrix(List<List<double>> A, string title = "Matrix")
         {
             Console.WriteLine($"{title}:");
             for (int i = 0; i < A.Count; i++)
@@ -19,6 +19,7 @@ namespace SimpleIteration_6._2._1
             }
             Console.WriteLine();
         }
+
         static void PrintVector(List<double> v, string name)
         {
             Console.WriteLine($"{name}:");
@@ -28,6 +29,7 @@ namespace SimpleIteration_6._2._1
             }
             Console.WriteLine();
         }
+
         static List<double> MatrixToVector(List<List<double>> matrix)
         {
             List<double> vector = new List<double>();
@@ -40,6 +42,7 @@ namespace SimpleIteration_6._2._1
             }
             return vector;
         }
+
         static List<double> SimpleIterationMethod(List<List<double>> A, List<double> b, double tolerance)
         {
             int n = A.Count;
@@ -62,16 +65,16 @@ namespace SimpleIteration_6._2._1
                 beta.Add(b[i] / A[i][i]);
             }
 
-            PrintMatrix(alpha, "Матрица Alpha");
-            PrintVector(beta, "Вектор Beta");
+            PrintMatrix(alpha, "Alpha Matrix");
+            PrintVector(beta, "Beta Vector");
 
             bool converge = false;
             int iteration = 0;
-            List<double> alphaVector = MatrixToVector(alpha);  
+            List<double> alphaVector = MatrixToVector(alpha);
 
             while (!converge)
             {
-                Console.WriteLine($"Итерация {++iteration}:");
+                Console.WriteLine($"Iteration {++iteration}:");
                 for (int i = 0; i < n; i++)
                 {
                     double sum = 0;
@@ -82,16 +85,15 @@ namespace SimpleIteration_6._2._1
                     x[i] = beta[i] + sum;
                 }
 
-                PrintVector(x, $"Приближение вектора X после итерации {iteration}");
+                PrintVector(x, $"Approximation of vector X after iteration {iteration}");
 
-                converge = CheckConvergence(x, prevX, alphaVector, tolerance); 
+                converge = CheckConvergence(x, prevX, alphaVector, tolerance);
                 prevX = new List<double>(x);
             }
 
             return x;
         }
 
-       
         static bool CheckConvergence(List<double> x, List<double> prevX, List<double> alpha, double tolerance)
         {
             double norm = 0;
@@ -109,7 +111,7 @@ namespace SimpleIteration_6._2._1
             }
             alphaNorm = Math.Sqrt(alphaNorm);
 
-            double rightHandSide = (1 - alphaNorm / alphaNorm) * tolerance; 
+            double rightHandSide = (1 - alphaNorm / alphaNorm) * tolerance;
 
             return norm <= rightHandSide;
         }
@@ -130,7 +132,7 @@ namespace SimpleIteration_6._2._1
                 sumSquaredResidual += residual * residual;
             }
 
-            Console.WriteLine("Вектор невязок:");
+            Console.WriteLine("Residual Vector:");
             for (int i = 0; i < residuals.Count; i++)
             {
                 Console.WriteLine($"r{i + 1} = {residuals[i]:E}");
@@ -151,22 +153,22 @@ namespace SimpleIteration_6._2._1
             List<double> b = new List<double> { 8, 9, 20 };
 
             PrintMatrix(A);
-            PrintVector(b, "Исходный вектор Beta:");
+            PrintVector(b, "Original Beta Vector:");
 
-            Console.Write("Введите точность 'eps': ");
+            Console.Write("Enter accuracy 'eps': ");
             double tolerance;
             while (!double.TryParse(Console.ReadLine(), NumberStyles.Float, CultureInfo.InvariantCulture, out tolerance))
             {
-                Console.Write("Неправильный ввод. Пожалуйста, введите числовое значение для точности ε: ");
+                Console.Write("Invalid input. Please enter a numerical value for accuracy ε: ");
             }
 
             List<double> x = SimpleIterationMethod(A, b, tolerance);
 
-            PrintVector(x, "Решение");
+            PrintVector(x, "Solution");
 
             CalculateAndPrintResiduals(A, b, x);
 
-            Console.WriteLine("\nНажмите Enter для выхода...");
+            Console.WriteLine("\nPress Enter to exit...");
             Console.ReadLine();
         }
     }
