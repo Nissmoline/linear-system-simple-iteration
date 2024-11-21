@@ -170,6 +170,15 @@ These results confirm the high precision of the method, satisfying the original 
 
 ---
 
+## Requirements
+- **Language:** C#
+- **Environment:** .NET Framework or .NET Core
+- **Libraries:** `System`, `System.Diagnostics`
+
+---
+
+---
+
 ## How to Use
 
 1. Clone the repository:
