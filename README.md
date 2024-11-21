@@ -173,10 +173,7 @@ These results confirm the high precision of the method, satisfying the original 
 ## Requirements
 - **Language:** C#
 - **Environment:** .NET Framework or .NET Core
-- **Libraries:** `System`, `System.Diagnostics`
-
----
-
+- **Libraries:** `System`, `Collections.Generic`,`Globalization`
 ---
 
 ## How to Use
