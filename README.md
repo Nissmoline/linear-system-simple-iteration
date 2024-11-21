@@ -181,7 +181,7 @@ These results confirm the high precision of the method, satisfying the original 
    ```bash
    dotnet run
    ```
-3. Enter the desired \( A \), \( b \), and \( \epsilon \) when prompted.
+3. Enter the desired $( A \)$, $( b \)$, and $( \epsilon \)$ when prompted.
 
 ---
 
