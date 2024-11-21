@@ -1,0 +1,14 @@
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.exe.config
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.exe
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.pdb
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.csproj.AssemblyReference.cache
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.exe
+C:\Users\Kolpa\Desktop\LabM1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.pdb
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.exe.config
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.exe
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\bin\Debug\SimpleIteration_6.2.1.pdb
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.csproj.AssemblyReference.cache
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.csproj.CoreCompileInputs.cache
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.exe
+C:\Users\Kolpa\Desktop\Марина Лаб 1\SimpleIteration_6.2.1\obj\Debug\SimpleIteration_6.2.1.pdb
