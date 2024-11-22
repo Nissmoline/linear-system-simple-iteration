@@ -52,8 +52,8 @@ x_3 &= 5 - 0.01x_1 - 0.02x_2
 $$
 
 The matrix representations are:
-- $( \beta \): \([2, 3, 5]^T\)$
-- $( \alpha \)$:
+- $\beta: [2, 3, 5]^T$
+- $\alpha$:
 
 $$
 \begin{bmatrix}
